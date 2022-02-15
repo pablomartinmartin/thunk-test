@@ -37,6 +37,7 @@ const Catalog = ({
             onAddToCart={onAddToCart}
             onRemoveCart={onRemoveCart}
             sku={item.sku}
+            inCart={cartItems.includes(item.sku)}
           />
         ))}
     </div>
