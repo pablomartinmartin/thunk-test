@@ -22,8 +22,8 @@ function App() {
             rel="noopener noreferrer"
           >
             Learn React
-            <Images />
           </a>
+          <Images />
         </header>
       </div>
     </Provider>

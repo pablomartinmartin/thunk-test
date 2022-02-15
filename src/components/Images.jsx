@@ -9,14 +9,15 @@ const Imagenes = (props) => {
   return (
     <div>
       Algunas Imagenes aca
-      <button onClick={() => props.onAddToCart("1234")}>
-        Agregar al Carrito{" "}
+      <button type="button" onClick={() => props.onAddToCart("1234")}>
+        Agregar al Carrito
       </button>
     </div>
   );
 };
 
 const mapStateToProps = (state, ownProps) => {
+  console.log("state: ", state);
   return {
     cartItems: state.cart.cartItems,
   };
